@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->timestamps('last_logout');
             $table->string('avatar');
             $table->integer('id_akses'); 
-            $table->string('deleted_at');
+            $table->datetime('deleted_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

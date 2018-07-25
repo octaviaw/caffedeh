@@ -13,7 +13,7 @@ class CreateMasterbarangsTable extends Migration
      */
     public function up()
     {
-        Schema::create('masterbarangs', function (Blueprint $table) {
+        Schema::create('masterbarang', function (Blueprint $table) {
             $table->increments('id');
             $table->string('kode_barang');
             $table->string('nama');
@@ -24,7 +24,7 @@ class CreateMasterbarangsTable extends Migration
             $table->string('brand');
             $table->integer('kapasitas');
             $table->integer('diskon');
-            $table->timestamps('deleted_at');
+            $table->datetime('deleted_at')->nullable();
             $table->timestamps();
         });
     }
@@ -47,6 +47,6 @@ deleted_at
      */
     public function down()
     {
-        Schema::dropIfExists('masterbarangs');
+        Schema::dropIfExists('masterbarang');
     }
 }

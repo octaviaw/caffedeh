@@ -13,14 +13,14 @@ class CreateSuppliersTable extends Migration
      */
     public function up()
     {
-        Schema::create('suppliers', function (Blueprint $table) {
+        Schema::create('supplier', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama');
             $table->string('notelp');
             $table->string('alamat');
             $table->string('nama_pic');
             $table->string('notelp_pic');
-            $table->timestamps('deleted_at');
+            $table->datetime('deleted_at')->nullable();
             $table->timestamps();
         });
     }
@@ -39,6 +39,6 @@ deleted_at
      */
     public function down()
     {
-        Schema::dropIfExists('suppliers');
+        Schema::dropIfExists('supplier');
     }
 }

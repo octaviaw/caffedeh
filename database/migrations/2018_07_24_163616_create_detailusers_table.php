@@ -13,7 +13,7 @@ class CreateDetailusersTable extends Migration
      */
     public function up()
     {
-        Schema::create('detailusers', function (Blueprint $table) {
+        Schema::create('detailuser', function (Blueprint $table) {
             $table->int('id');
             $table->string('nik');
             $table->string('noktp');
@@ -21,6 +21,7 @@ class CreateDetailusersTable extends Migration
             $table->date('tgl_lahir');
             $table->string('gender');
             $table->string('status_karyawan');
+            $table->datetime('deleted_at')->nullable();
             $table->timestamps();
         });
 
@@ -40,6 +41,6 @@ status karyawan
      */
     public function down()
     {
-        Schema::dropIfExists('detailusers');
+        Schema::dropIfExists('detailuser');
     }
 }

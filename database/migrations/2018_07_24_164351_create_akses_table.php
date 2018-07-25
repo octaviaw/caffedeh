@@ -16,7 +16,7 @@ class CreateAksesTable extends Migration
         Schema::create('akses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama_akses');
-            $table->timestamps('deleted_at');
+            $table->datetime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

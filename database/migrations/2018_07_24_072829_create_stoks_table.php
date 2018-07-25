@@ -13,8 +13,10 @@ class CreateStoksTable extends Migration
      */
     public function up()
     {
-        Schema::create('stoks', function (Blueprint $table) {
+        Schema::create('stok', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('kode_barang');
+            $table->datetime('deleted_at')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateStoksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stoks');
+        Schema::dropIfExists('stok');
     }
 }

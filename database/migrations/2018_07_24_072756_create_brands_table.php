@@ -13,8 +13,10 @@ class CreateBrandsTable extends Migration
      */
     public function up()
     {
-        Schema::create('brands', function (Blueprint $table) {
+        Schema::create('brand', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nama_brand');
+            $table->datetime('deleted_at')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateBrandsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('brands');
+        Schema::dropIfExists('brand');
     }
 }
