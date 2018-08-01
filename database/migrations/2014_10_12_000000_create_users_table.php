@@ -19,8 +19,8 @@ class CreateUsersTable extends Migration
             $table->string('nama_belakang');
             $table->string('email')->unique();
             $table->string('password');
-            $table->timestamps('last_login');
-            $table->timestamps('last_logout');
+            $table->datetime('last_login');
+            $table->datetime('last_logout');
             $table->string('avatar');
             $table->integer('id_akses'); 
             $table->datetime('deleted_at')->nullable();

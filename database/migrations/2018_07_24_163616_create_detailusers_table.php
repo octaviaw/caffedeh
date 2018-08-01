@@ -14,7 +14,7 @@ class CreateDetailusersTable extends Migration
     public function up()
     {
         Schema::create('detailuser', function (Blueprint $table) {
-            $table->int('id');
+            $table->integer('id');
             $table->string('nik');
             $table->string('noktp');
             $table->string('tempat_lahir');
