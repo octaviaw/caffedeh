@@ -11,14 +11,13 @@
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    return view('dashboard');
 });
-Route::get('/', function() {
-
-return view('dashboard');
+Route::get('/login', function() {
+return view('login');
 });
-
-
 Route::resource('barang','BarangController');
+Route::resource('supplier','SupplierController');
+Route::resource('user','UserController');
 

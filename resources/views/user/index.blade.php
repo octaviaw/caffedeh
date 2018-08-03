@@ -21,7 +21,7 @@
             <div class="inner">
               <h3>150</h3>
 
-              <p>Barang Masuk</p>
+              <p>Total Jumlah User</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
@@ -36,12 +36,12 @@
             <div class="inner">
               <h3>53</h3>
 
-              <p>Barang Keluar</p>
+              <p>Total User Tahun Ini</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="{{url('supplier')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            
           </div>
         </div>
         <!-- ./col -->
@@ -51,12 +51,11 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>Stok Bulan Ini</p>
+              <p>Total User Bulan Ini</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="{{url('user')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -66,12 +65,12 @@
             <div class="inner">
               <h3>65</h3>
 
-              <p>Stok Tahun Ini</p>
+              <p>Total User Hari Ini</p>
             </div>
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="{{url('brand')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            
           </div>
         </div>
         <!-- ./col -->
@@ -84,41 +83,26 @@
             <table class="table table-striped table-sm">
               <thead>
                 <tr>
-                  <th>Kode Barang</th>
-                  <th>Nama</th>
-                  <th>Brand</th>
-                  <th>Satuan</th>
-                  <th>Min stok</th>
-                  <th>Harga Jual</th>
-                  <th>Harga Beli</th>
-                  <th>Kapasitas</th>
-                  <th>Diskon(%)</th>
+                  <th>Nama Depan</th>
+                  <th>Nama Belakang</th>
+                  <th>NIK</th>
+                  <th>Email</th>
                   <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($data as $barang)
                 <tr>
-                  <td>{{$barang->kode_barang}}</td>
-                  <td>{{$barang->nama}}</td>
-                  <td>{{$barang->brand}}</td>
-                  <td>{{$barang->satuan}}</td>
-                  <td>{{$barang->min_stok}}</td>
-                  <td>{{$barang->harga_jual}}</td>
-                  <td>{{$barang->harga_beli}}</td>
-                  <td>{{$barang->kapasitas}}</td>
-                  <td>{{$barang->diskon}}</td>
-                  <td><a href="{{route('barang.edit',$barang->id)}}">Edit</a>
-                    <form action="{{route('barang.destroy',$barang->id)}}" method="POST" >
-                      {{csrf_field()}}
-                      <input type="text" name="_method" value="DELETE" hidden>
-                      <input type="SUBMIT" value="DELETE">
-
-                    </form>
-
+                  <td>Octa</td>
+                  <td>Via</td>
+                  <td>858788</td>
+                  <td>via@gmail.com</td>
+                  <td>
+                    <a href="#">Detail</a>
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
                   </td>
                 </tr>
-                @endforeach
+             
               </tbody>
             </table>
           </div>
