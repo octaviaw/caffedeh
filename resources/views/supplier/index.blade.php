@@ -76,13 +76,14 @@
         </div>
         <!-- ./col -->
       </div>
-          <div class="table-responsive">
-            <div class="text-center">
-                 <a href="{{route('barang.create')}}">Tambah</a>
+           <div class="box">
+            <div class="box-header with-border">
+               <a href="{{route('supplier.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah</a>
             </div>
-            <br>
-            <table class="table table-striped table-sm">
-              <thead>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+                <thead>
                 <tr>
                   <th>Nama PT</th>
                   <th>Nama Supplier</th>
@@ -97,14 +98,17 @@
                   <td>Via</td>
                   <td>08587888654</td>
                   <td>Jl ABC</td>
-                  <td><a href="#">Edit</a>
-                    <a href="#">Delete</a>
+                  <td><a href="#"><i class="fa fa-pencil"></i></a>
+                    <a href="#"><i class="fa fa-trash"></i></a>
                   </td>
                 </tr>
              
               </tbody>
-            </table>
+              </table>
+            </div>            
           </div>
-   
+          <!-- /.box -->
+
+
     </section>
     @endsection

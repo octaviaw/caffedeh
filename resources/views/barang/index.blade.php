@@ -41,7 +41,7 @@
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="{{url('supplier')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            
           </div>
         </div>
         <!-- ./col -->
@@ -56,7 +56,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="{{url('user')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+           
           </div>
         </div>
         <!-- ./col -->
@@ -71,14 +71,13 @@
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="{{url('brand')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
       </div>
           <div class="table-responsive">
             <div class="text-center">
-                 <a href="{{route('barang.create')}}">Tambah</a>
+                  <a href="{{route('barang.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah</a>
             </div>
             <br>
             <table class="table table-striped table-sm">
@@ -108,11 +107,13 @@
                   <td>{{$barang->harga_beli}}</td>
                   <td>{{$barang->kapasitas}}</td>
                   <td>{{$barang->diskon}}</td>
-                  <td><a href="{{route('barang.edit',$barang->id)}}">Edit</a>
+                  <td><a href="{{route('barang.edit',$barang->id)}}"><i class="fa fa-pencil"></i></a>
                     <form action="{{route('barang.destroy',$barang->id)}}" method="POST" >
                       {{csrf_field()}}
                       <input type="text" name="_method" value="DELETE" hidden>
-                      <input type="SUBMIT" value="DELETE">
+                      <button type="submit" class="btn btn-default">
+                    <i class="fa fa-trash"></i>
+                </button>
 
                     </form>
 
