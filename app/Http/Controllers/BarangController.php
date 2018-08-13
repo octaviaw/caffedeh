@@ -16,7 +16,7 @@ class BarangController extends Controller
     {
         //
         $data=Masterbarang::all();
-        return view ('barang.index',compact('data'));
+        return view ('master.barang.index',compact('data'));
     }
 
     /**
@@ -27,7 +27,7 @@ class BarangController extends Controller
     public function create()
     {
         //
-        return view('barang.insert');
+        return view('master.barang.insert');
         
 
     }
@@ -42,7 +42,7 @@ class BarangController extends Controller
     {
         //
          $data=Masterbarang::create($request->all());
-         return redirect('barang');
+         return redirect('master.barang');
 
     }
 
@@ -67,7 +67,7 @@ class BarangController extends Controller
     {
         //
         $data=Masterbarang::find($id);
-        return view('barang.edit',compact('data'));
+        return view('master.barang.edit',compact('data'));
 
 
     }
@@ -84,7 +84,7 @@ class BarangController extends Controller
         //
         $data=Masterbarang::find($id);
         $data->update($request->all());
-        return redirect('barang');
+        return redirect('master.barang');
     }
 
     /**
@@ -97,6 +97,6 @@ class BarangController extends Controller
     {
         //
     $data=Masterbarang::find($id)->delete();
-    return redirect('barang');
+    return redirect('master.barang');
     }
 }

@@ -14,7 +14,7 @@ class UserController extends Controller
     public function index()
     {
         //
-    return view('user.index');
+    return view('master.user.index');
     }
 
     /**
@@ -25,7 +25,7 @@ class UserController extends Controller
     public function create()
     {
         //
-        return view('user.add');
+        return view('master.user.add');
     }
 
     /**
@@ -59,7 +59,7 @@ class UserController extends Controller
     public function edit($id)
     {
         //
-        return view('user.edit');
+        return view('master.user.edit');
     }
 
     /**
