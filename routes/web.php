@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/login', function() {
 return view('login');
 });
+Route::get('/editprofile', function() {
+return view('editprofile');
+});
 Route::resource('barang','BarangController');
 Route::resource('supplier','SupplierController');
 Route::resource('user','UserController');

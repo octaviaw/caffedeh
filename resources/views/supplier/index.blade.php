@@ -78,7 +78,9 @@
       </div>
            <div class="box">
             <div class="box-header with-border">
+               <div class="text-center">
                <a href="{{route('supplier.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah</a>
+             </div>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -98,7 +100,8 @@
                   <td>Via</td>
                   <td>08587888654</td>
                   <td>Jl ABC</td>
-                  <td><a href="#"><i class="fa fa-pencil"></i></a>
+                  <td> <a href="#"><i class="fa fa-eye"></i></a>
+                    <a href="{{route('supplier.edit',1)}}"><i class="fa fa-pencil"></i></a>
                     <a href="#"><i class="fa fa-trash"></i></a>
                   </td>
                 </tr>

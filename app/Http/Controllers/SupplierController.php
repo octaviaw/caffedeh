@@ -59,6 +59,7 @@ class SupplierController extends Controller
     public function edit($id)
     {
         //
+        return view('supplier.edit');
     }
 
     /**

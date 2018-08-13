@@ -75,11 +75,14 @@
         </div>
         <!-- ./col -->
       </div>
-          <div class="table-responsive">
+      <div class="box">
+          <div class="box-header with-border"> 
             <div class="text-center">
                   <a href="{{route('barang.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah</a>
             </div>
-            <br>
+            </div>
+          <div class="table-responsive">
+           
             <table class="table table-striped table-sm">
               <thead>
                 <tr>
@@ -107,21 +110,18 @@
                   <td>{{$barang->harga_beli}}</td>
                   <td>{{$barang->kapasitas}}</td>
                   <td>{{$barang->diskon}}</td>
-                  <td><a href="{{route('barang.edit',$barang->id)}}"><i class="fa fa-pencil"></i></a>
-                    <form action="{{route('barang.destroy',$barang->id)}}" method="POST" >
-                      {{csrf_field()}}
-                      <input type="text" name="_method" value="DELETE" hidden>
-                      <button type="submit" class="btn btn-default">
-                    <i class="fa fa-trash"></i>
-                </button>
-
-                    </form>
+                  <td>
+                    <a href="#"><i class="fa fa-eye"></i></a>
+                    <a href="{{route('barang.edit',$barang->id)}}"><i class="fa fa-pencil"></i></a>
+                    <a href="{{route('barang.destroy',$barang->id)}}"><i class="fa fa-trash"></i></a>
+                 
 
                   </td>
                 </tr>
                 @endforeach
               </tbody>
             </table>
+          </div>
           </div>
    
     </section>

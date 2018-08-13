@@ -75,11 +75,15 @@
         </div>
         <!-- ./col -->
       </div>
-          <div class="table-responsive">
+          <div class="box">
+            
+            <div class="box-header with-border"> 
             <div class="text-center">
-                 <a href="{{route('barang.create')}}">Tambah</a>
+                  <a href="{{route('user.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah</a>
             </div>
-            <br>
+            </div>
+            <br> 
+            <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
                 <tr>
@@ -97,15 +101,15 @@
                   <td>858788</td>
                   <td>via@gmail.com</td>
                   <td>
-                    <a href="#">Detail</a>
-                    <a href="#">Edit</a>
-                    <a href="#">Delete</a>
+                     <a href="#"><i class="fa fa-eye"></i></a>
+                    <a href="{{route('user.edit',1)}}"><i class="fa fa-pencil"></i></a>
+                    <a href="#"><i class="fa fa-trash"></i></a>
                   </td>
                 </tr>
              
               </tbody>
             </table>
           </div>
-   
+        </div>
     </section>
     @endsection

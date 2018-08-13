@@ -9,29 +9,41 @@
             {{csrf_field()}}
 
           <div class="modal-header">
-            <h3>Edit Supplier </h3>
+            <h3>Tambah User </h3>
          </div>
+         <div class="form-group">
+      <label for="foto" class="col-md-3 control-label">Foto</label>
+      <div class="col-md-6">
+         <input type="file" class="form-control" name="avatar" autofocus>
+         <span class="help-block with-errors"></span>
+      </div>
+   </div>
          <div class="modal-body">
            <div class="form-group">
-              <label for="nama_supplier" class="col-md-3 control-label">Nama Supplier</label>
+              <label for="nama_depan" class="col-md-3 control-label">Nama Depan</label>
               <div class="col-md-6">
-                 <input type="text" class="form-control" name="nama_supplier" autofocus required>
+                 <input type="text" class="form-control" name="nama_depan" autofocus required>
                  <span class="help-block with-errors"></span>
               </div>
            </div>
-
            <div class="form-group">
-              <label for="nama_pt" class="col-md-3 control-label">Nama PT</label>
+              <label for="nama_belakang" class="col-md-3 control-label">Nama Belakang</label>
               <div class="col-md-6">
-                  <input type="text" class="form-control" name="nama_pt" autofocus required>
+                 <input type="text" class="form-control" name="nama_belakang" autofocus required>
                  <span class="help-block with-errors"></span>
               </div>
            </div>
-
-            <div class="form-group">
-              <label for="alamat" class="col-md-3 control-label">Alamat</label>
+           <div class="form-group">
+              <label for="email" class="col-md-3 control-label">Email</label>
               <div class="col-md-6">
-                  <input type="text" class="form-control" name="alamat" autofocus required>
+                 <input type="email" class="form-control" name="email" autofocus required>
+                 <span class="help-block with-errors"></span>
+              </div>
+           </div>
+           <div class="form-group">
+              <label for="password" class="col-md-3 control-label">Password</label>
+              <div class="col-md-6">
+                 <input type="password" class="form-control" name="password" autofocus required>
                  <span class="help-block with-errors"></span>
               </div>
            </div>

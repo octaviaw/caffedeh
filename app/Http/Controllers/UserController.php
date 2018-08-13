@@ -25,6 +25,7 @@ class UserController extends Controller
     public function create()
     {
         //
+        return view('user.add');
     }
 
     /**
@@ -58,6 +59,7 @@ class UserController extends Controller
     public function edit($id)
     {
         //
+        return view('user.edit');
     }
 
     /**
