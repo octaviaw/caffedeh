@@ -50,7 +50,7 @@
            <div class="modal-footer">
              <center>
               <button type="submit" class="btn btn-primary btn-save"><i class="fa fa-floppy-o"></i> Simpan </button>
-              <a href="{{ url('supplier/') }}" class="btn btn-warning"><i class="fa fa-arrow-circle-left"></i> Batal</a>
+              <a href="{{ url('user/') }}" class="btn btn-warning"><i class="fa fa-arrow-circle-left"></i> Batal</a>
             </center>
            </div>
 

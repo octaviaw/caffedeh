@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SupplierController extends Controller
+class BrandController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,7 @@ class SupplierController extends Controller
      */
     public function index()
     {
-        //
-        return view('master.supplier.index');
+        return view ('master.brand.index');
     }
 
     /**
@@ -25,7 +24,7 @@ class SupplierController extends Controller
     public function create()
     {
         //
-        return view('master.supplier.add');
+        return view ('master.brand.add');
     }
 
     /**
@@ -37,6 +36,7 @@ class SupplierController extends Controller
     public function store(Request $request)
     {
         //
+        
     }
 
     /**
@@ -59,7 +59,7 @@ class SupplierController extends Controller
     public function edit($id)
     {
         //
-        return view('master.supplier.edit');
+         return view ('master.brand.edit');
     }
 
     /**

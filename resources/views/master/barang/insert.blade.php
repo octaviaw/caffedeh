@@ -47,7 +47,7 @@
 
               <div class="form-group">
                <label for="satuan" class="col-md-3 control-label">Satuan</label>
- <div class="col-md-6">
+                <div class="col-md-6">
                 <input type="text" class="form-control" id="satuan" name="satuan" placeholder="" value="" required>
                  <span class="help-block with-errors"></span>
               </div>
@@ -56,7 +56,7 @@
 
               <div class="form-group">
               <label for="min_stok" class="col-md-3 control-label">Minimal Stok</label>
- <div class="col-md-6">
+                 <div class="col-md-6">
                 <input type="number" class="form-control" id="min_stok" name="min_stok" placeholder="" value="" required>
                  <span class="help-block with-errors"></span>
               </div>
@@ -64,7 +64,7 @@
 
               <div class="form-group">
                <label for="brand" class="col-md-3 control-label">Brand</label>
- <div class="col-md-6">
+                 <div class="col-md-6">
                 <input type="text" class="form-control" id="brand" placeholder="" name="brand" value="" required>
                  <span class="help-block with-errors"></span>
               </div>
@@ -77,9 +77,9 @@
               </div>
            </div>
            <div class="form-group">
-              <label for="diskon" class="col-md-3 control-label">Diskon</label>
+              <label for="diskon" class="col-md-3 control-label">Diskon(%)</label>
                  <div class="col-md-6">
-                <input type="text" class="form-control" id="diskon" placeholder="" name="diskon" value="" required>
+                <input type="number" class="form-control" id="diskon" placeholder="" name="diskon" value="" required>
                  <span class="help-block with-errors"></span>
               </div>
            </div>

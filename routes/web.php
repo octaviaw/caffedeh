@@ -15,12 +15,16 @@ Route::get('/', function () {
     return view('dashboard');
 });
 Route::get('/login', function() {
-return view('login');
+return view('auth.login');
+});
+Route::get('/register', function() {
+return view('auth.register');
 });
 Route::get('/editprofile', function() {
-return view('editprofile');
+return view('user.editprofile');
 });
 Route::resource('barang','BarangController');
 Route::resource('supplier','SupplierController');
 Route::resource('user','UserController');
+Route::resource('brand','BrandController');
 
